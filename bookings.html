@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Natumi Ramen website">
+		<meta name="author" content="Yang Xiao">
+		<title>Natumi Ramen | Bookings</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<link rel ="icon" href="images/natumi-logo-title.png" type="images/png">
+	</head>
+
+	<body class="bookings-page">
+		<header id="page-header">
+			<section class="banner-title">
+				<p class="top-header">
+					<a href="https://www.instagram.com/natumi_ramen/" target="_blank">
+						<img class="header-instagram" src="images/instagram.png" alt="Instagram logo">
+					</a>
+
+					<a href="index.html">
+						<img class="header-logo" src="images/natumi-logo-title.png" alt="Natumi logo">
+					</a>
+
+					SHOP 77 CENTRAL SHOPPING CENTRE 4116
+
+				</p>
+			</section>
+
+			<nav id="main-menu">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="menu.html">Menu</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<li class="current">
+						<a href="bookings.html">Bookings</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h1>BOOKINGS</h1>
+
+		</header>
+
+        <img id="natumi-logo" src="images/natumi-logo.png" alt="Natumi logo">
+
+		<article id="main-content">
+
+			<p id="bookings-intro"><b>Relax | Rejuvenate | Rejoice</b></p>
+			<p><b>Natumi</b></p>
+			<p id="bookings-intro-second">Monday – Sunday</p>
+			<p>11am – 8pm</p>
+			<h2>Have an upcoming event?</h2>
+			<p id="bookings-note">Make it an occasion to remember at Natumi.</p>
+			<p>Natumi is the perfect place for a relaxing catch up or celebration.</p>
+
+		</article>
+
+		<img class="in-page-image" src="images/bookings-image-1.JPG" alt="store image landing page">
+
+		<article id="main-content">
+
+			<h2 id="booking-form-title">Your Event Details</h2>
+
+			<table class="contact-list">
+				<tr>
+					<td><label for="fname">First Name</label></td>
+					<td id="booking-form-gap"></td>		<!--only needed one-->
+					<td><label for="fname">Last Name</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="firstname-id" name="firstname" placeholder="First name"></td>
+					<td></td>
+					<td><input type="text" id="lastname-id" name="lastname" placeholder="Last name"></td>
+				</tr>
+				<tr>
+					<td><span id="firstname-error"></span></td>	<!--without this no message will be shown-->
+					<td></td>
+					<td><span id="lastname-error"></span></td>	<!--without this no message will be shown-->
+				</tr>
+				<tr>
+					<td><label for="fname">Email Address</label></td>
+					<td></td>
+					<td><label for="fname">Phone Number</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="email-id" name="email" placeholder="Email"></td>
+					<td></td>
+					<td><input type="text" id="phone-id" name="phone" placeholder="Phone"></td>
+				</tr>
+				<tr>
+					<td><span id="email-error"></span></td>	<!--without this no message will be shown-->
+					<td></td>
+					<td><span id="phone-error"></span></td>	<!--without this no message will be shown-->
+				</tr>
+				<tr>
+					<td colspan="3"><label for="fname">Nature of your enquiry (e.g., Dining, End of Year Party, Celebration)</label></td>
+
+				</tr>
+				<tr>
+					<td colspan="3"><textarea id="messages-id1" placeholder="Messages"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="3"><span id="messages1-error"></span></td>	<!--without this no message will be shown-->
+				</tr>
+				<tr>
+					<td><label for="fname">Event Date</label></td>
+					<td></td>
+					<td><label for="fname">Number of People</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="event-id" name="event" placeholder="DD/MM/YYYY"></td>
+					<td></td>
+					<td>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>Specify in Messages</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><span id="event-error"></span></td>	<!--without this no message will be shown-->
+					<td></td>
+					<td><span id="people-error"></span></td>	<!--without this no message will be shown-->
+				</tr>
+				<tr>
+					<td><label for="fname">Start Time</label></td>
+					<td></td>
+					<td><label for="fname">End Time</label></td>
+				</tr>
+				<tr>
+					<td>
+						<select id="start-time-id">
+							<option value="0">11:00</option>	<!--value here is used to avoid end time earlier than start time error -->
+							<option value="0.5">11:30</option>
+							<option value="1">12:00</option>
+							<option value="1.5">12:30</option>
+							<option value="2">13:00</option>
+							<option value="2.5">13:30</option>
+							<option value="3">14:00</option>
+							<option value="3.5">14:30</option>
+							<option value="4">15:00</option>
+							<option value="4.5">15:30</option>
+							<option value="5">16:00</option>
+							<option value="5.5">16:30</option>
+							<option value="6">17:00</option>
+							<option value="6.5">17:30</option>
+							<option value="7">18:00</option>
+							<option value="7.5">18:30</option>
+							<option value="8">19:00</option>
+						</select>
+					</td>
+					<td></td>
+					<td>
+						<select id="end-time-id">
+							<option value="0.5">11:30</option>
+							<option value="1">12:00</option>
+							<option value="1.5">12:30</option>
+							<option value="2">13:00</option>
+							<option value="2.5">13:30</option>
+							<option value="3">14:00</option>
+							<option value="3.5">14:30</option>
+							<option value="4">15:00</option>
+							<option value="4.5">15:30</option>
+							<option value="5">16:00</option>
+							<option value="5.5">16:30</option>
+							<option value="6">17:00</option>
+							<option value="6.5">17:30</option>
+							<option value="7">18:00</option>
+							<option value="7.5">18:30</option>
+							<option value="8">19:00</option>
+							<option value="9.5">19:30</option>
+							<option value="9">20:00</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><span id="time-error"></span></td>	<!--without this no message will be shown-->
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="3"><label for="fname">Messages</label></td>
+				</tr>
+				<tr>
+					<td colspan="3"><textarea id="messages-id2" placeholder="Messages"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="3"><span id="messages2-error"></span></td>	<!--without this no message will be shown-->
+				</tr>
+				<tr>
+					<td colspan="3"><button class="booking-button" id="booking-submit" onclick="bookingButtonFunction()">Submit</button></td>
+				</tr>
+			</table>
+		</article>
+
+        <footer id="page-footer">
+		
+			<nav id="secondary-menu">
+				
+				<h><b>ADDRESS</b><a href="index.html"><img id="logo-footer" src="images/natumi-logo-footer.png" alt="Natumi logo"></a></h>
+				
+				<p>Shop 77 CENTRAL
+					SHOPPING CENTRE, 
+					662 Compton Rd, 
+					Calamvale QLD 4116</p>
+
+				<p><a href="https://goo.gl/maps/nxj7dTf7EpUZpidh6" target="_blank">View on Google maps</a></p>
+
+				<h><b>CONTACT US</b></h>
+				
+				<p>tel: <a href="tel:04 6719 9999">04 6719 9999</a></p>
+
+				<p>email: <a href="mailto:natumiramen@gmail.com">natumiramen@gmail.com</a></p>
+
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="menu.html">Menu</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<li class="current">
+						<a href="bookings.html">Bookings</a>
+					</li>
+					<li>
+						<a href="privacy.html">Privacy</a>
+					</li>
+					<li>
+						<a href="sitemap.html">Sitemap</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+
+	<script src="script.js"></script>
+
+</html>
