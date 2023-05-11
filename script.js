@@ -140,7 +140,6 @@ function contactValidateEmail() {
 // W3resource. (2022, 08 19). JavaScript: HTML Form - email validation. 
 // Retrieved from W3resource: https://www.w3resource.com/javascript/form/email-validation.php
 
-
 function contactValidateMessages() {
     var error = document.getElementById("messages-error");
 
@@ -311,9 +310,3 @@ function bookingValidateMessages2() {
         bookingValidateMessagesKey2 = 1;
     }
 }
-
-
-
-
-
-
