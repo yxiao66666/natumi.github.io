@@ -1,0 +1,808 @@
+/* default phone view*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* setting for the entire document*/
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	background: url(images/Background-Image.jpg);
+	color: white;
+}
+
+/* top navigation bar */
+
+#main-menu ul {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+#main-menu li {
+	list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+#main-menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0.25em 1em;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+	font-size: 1.5em;
+}
+
+#main-menu a:hover {
+	background: rgba(255,255,255,0.3);
+}
+
+#main-menu li.current a {
+	background: white;
+	color: black;
+	text-shadow: none;
+}
+
+#page-header .cta-button a:hover {
+	color: black;
+	background-color: white;
+	box-shadow: none;
+}
+
+/* very top where the location of the Natumi Ramen is*/
+
+.top-header {
+	color: white;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+/* very top - the Natumi logo and Instagram logo*/
+.header-instagram {
+	float: right;
+	height: 1.5em;
+}
+
+.header-logo {
+	float: left;
+	height: 1.5em;
+	margin-right: 0.2em;
+}
+
+/* page Header title */
+
+#page-header {
+	background-size: cover;
+	background-position: center center;
+	min-height: 70vh;
+}
+
+/* here is how to get the grey area on top of the image */
+
+#page-header .banner-title {
+	background: rgba(255,255,255,0.5);
+}
+
+/* title of the page*/
+
+#page-header h1 {
+	font-size: 8em;
+	line-height: 1em;
+	padding: 10%;
+	color: rgb(199, 48, 48);
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 4px 4px black;
+}
+
+/* natumi logo*/
+
+#natumi-logo {
+	display: block;
+	margin-top: 7%;		/* distance from top and bottom*/
+	margin-bottom: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+/* natumi logo in the footer*/
+
+#logo-footer {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	float: right;
+}
+
+/* landing page header backgound*/
+
+body.landing-page #page-header {
+	background-image: url(images/landing-head.jpg);
+}
+
+/* about page header backgound*/
+
+body.about-page #page-header {
+	background-image: url(images/about-head.jpg);
+}
+
+/* menu page header background*/
+
+body.menu-page #page-header {
+	background-image: url(images/menu-head.jpg);
+}
+
+/* gallery page header background*/
+
+body.gallery-page #page-header {
+	background-image: url(images/gallery-head.jpg);
+}
+
+/* contact page header background*/
+
+body.contact-page #page-header {
+	background-image: url(images/contact-head.jpg);
+}
+
+/* bookings page header background*/
+
+body.bookings-page #page-header {
+	background-image: url(images/bookings-head.png);
+}
+
+/* privacy page header background*/
+
+body.privacy-page #page-header {
+	background-image: url(images/landing-head.jpg);
+}
+
+/* sitemap page header background*/
+
+body.sitemap-page #page-header {
+	background-image: url(images/landing-head.jpg);
+}
+
+/* confirmation page header background*/
+
+body.confirmation-page #page-header {
+	background-image: url(images/landing-head.jpg);
+}
+
+/* main content setting for all content*/
+
+#main-content {
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+/* smaller header or section header*/
+
+#main-content h2 {
+	font-size: 4em;
+	line-height: 1em;
+	font-weight: 500;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(199, 48, 48);  /* colour from the logo*/
+}
+
+/* main writting paragraph*/
+
+#main-content p {
+	padding-left: 10%;  /* so that the text is not reaching to the edge of the page*/
+	padding-right: 10%;	/* same above*/
+	margin-bottom: 1em; 
+	font-size: 1.8em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+#main-content .open-hour-note {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-top: -1.6em;
+	margin-bottom: 3em;
+}
+
+#main-content .online-ordering-note {
+	margin-bottom: 3em;
+}
+
+/* page footer */
+
+#page-footer {
+	padding: 1.5em;
+	background-color: rgb(199, 48, 48);
+	color: white;
+}
+
+/* for the navigation bar in footer*/
+
+#secondary-menu li {
+	list-style: none; /* delect the dot point in the list*/
+}
+
+#secondary-menu a {	
+	color: white;	/* so that the list won't change colours*/
+}
+
+/* for landing page only - the image that separated landing into a half*/
+
+#qr-code {	/* img inside div*/
+	margin-top: 1%; 
+	margin-bottom: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transition: transform .2s;
+}
+
+.qr-code {	/* div*/
+	width: 100%;
+	position: relative;
+	/* popup container*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#qr-code:hover {
+	transform: scale(1.03);
+}
+
+.qr-code .popup-payment {
+	visibility: hidden;
+	position: absolute;
+	width: 20em;
+	right: 0%;
+	left: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	bottom: -31%;	/* put it to the bottom*/
+	opacity: 90%;
+}
+
+.popup-payment-methods {
+	width: 20em;
+	border-radius: 4px;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.qr-code .show {
+	visibility: visible;
+	-webkit-animation: fadeIn .2s;
+	animation: fadeIn .2s;
+	opacity: 90%;
+}
+
+.in-page-image {
+	margin-bottom: 4em;
+	width: 100%;
+}
+
+/* for about page only - the images in 3 * 3 grind*/
+
+#about-us-h2 {
+	margin-top: -0.5em;  /* put the smaller heading slightly closer to logo*/
+}
+
+.about-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-bottom: 15%;
+}
+
+.about-container-item {
+	width: 32%; 
+	margin-bottom: 1%; /* (100-32*3)/2 */
+	position: relative;
+	transition: transform .2s;
+	/* Popup container*/
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Bjerrome, T. A. (2019, 04 15). Common CSS Flexbox Layout Patterns with Example Code. 
+Retrieved from Tobiasahlin: https://tobiasahlin.com/blog/common-flexbox-patterns/ */
+
+.about-images {	/* section break*/
+	width: 100%;
+}
+
+.about-container-item:hover {
+	transform: scale(1.03); /* popup when mouse hovering*/
+}
+
+/* The actual popup */
+
+.about-container-item .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 103%;
+	left: 50%;
+	margin-left: -80px;
+	opacity: 90%;
+}
+
+/* Popup arrow */
+
+.about-container-item .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555555 transparent transparent transparent;
+	opacity: 90%;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.about-container-item .show {
+	visibility: visible;
+	-webkit-animation: fadeIn .2s;
+	animation: fadeIn .2s;
+	opacity: 90%;
+}
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 0.9;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:0.9;}
+}
+
+/* W3schools. (2023). How TO - Popup. 
+Retrieved from W3schools: https://www.w3schools.com/howto/howto_js_popup.asp */
+
+/* for menu page only*/
+/* the booking button is universal however first used in bookings so named booking-button*/
+
+.booking-button {
+	background-color: rgb(211, 101, 81); 
+	color: black; 
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	font-size: 1.5em;
+	margin: auto;
+	margin-bottom: 3%;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	border-radius: 4px;
+	font-family: 'Roboto Condensed';
+	box-shadow: 15px 15px rgba(211, 100, 81, 0.4);
+}
+
+.booking-button:hover {
+	background-color: rgb(199, 48, 48);
+	color: white;
+	transform: scale(1.1);
+	box-shadow:none;
+}
+
+#menu-title {
+	font-size:1.25em;
+}
+
+#menu-intro {
+	margin-top: -1em;
+}
+
+.menu-list {
+	padding-left: 15%;
+	padding-right: 10%;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 10%;
+	line-height: 2em;
+}
+
+.menu-pdf-button {
+	text-decoration: none;
+}
+
+#menu-contact {
+	margin-bottom: 3em;
+}
+
+.booking-button #menu-contact-button {
+	margin-bottom: 2.5em;
+}
+
+/* for gallery page only*/
+
+#gallery-intro {
+	margin-top: -1em;	/* closer to the logo*/
+}
+
+.gallery-row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+  /* create three equal columns that sits next to each other */
+.gallery-column {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	max-width: 50%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+  
+.gallery-column img {
+	margin-top: 16px;
+	vertical-align: middle;
+	width: 100%;
+	transition: transform .2s;
+}
+
+.gallery-column img:hover {
+	transform: scale(1.03); /* popup when mouse hover*/
+}
+
+/* makes a two column-layout instead of three columns */
+@media screen and (min-width: 990px) {
+	.gallery-column {
+		-ms-flex: 32%; 
+		flex: 32%;
+		max-width: 32%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+	.gallery-column {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
+}
+
+#gallery-button {
+	margin-bottom: 4em;
+}
+
+/* for sitemap page only - the sitemap list*/
+
+.sitemap-container {
+	text-align: center;
+}
+
+#sitemap {
+	display: inline-block;
+	text-align: left;
+}
+
+#sitemap a {
+	text-decoration: none;
+	color: white;
+}
+
+/* for contact page only*/
+
+#main-content #contact-intro {
+	margin-top: -1.1em;
+	margin-bottom: 0em;
+}
+
+.contact-list {
+	font-size: 1.5em;
+	margin: auto;
+	width: 95%;
+	margin-bottom: 10%;
+}
+
+input[type=text], select {	/* the type-in textbox for name, email and phone number*/
+	width: 100%;
+	padding: 5%;
+	margin-bottom: 5%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	box-shadow: 6px 6px rgba(168, 168, 168, 0.4);
+}
+
+input[type=submit] {	/* submit button*/
+	width: 100%;
+	background-color: rgb(211, 101, 81);
+	color: black;
+	padding: 1.5% 2%;	/* for inner text, don't change*/
+	border: none;
+	border-radius: 4px; 
+	cursor: pointer;
+	transition-duration: 0.3s;
+	margin: auto;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 2%;
+	height: 3em;
+}
+
+input[type=submit]:hover {
+	transform: scale(1.01);	/* most of the effects are achieved in bookings-button*/
+}
+
+textarea {		/* the message textbox*/
+	width: 100%;
+	padding: 1.5% 2%;	/* top-bottom and left-right padding, don't change*/
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 1em;
+	resize: none;
+	height: 100px;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	margin-bottom: 2%;
+	box-shadow: 6px 6px rgba(168, 168, 168, 0.4);
+}
+
+textarea:focus {
+	transform: scale(1.02);
+	transition-duration: 0.4s;
+	box-shadow: none;
+}
+
+input[type=text]:focus {
+	transform: scale(1.04);
+	transition-duration: 0.5s;
+	box-shadow: none;
+}
+
+#contact-button:hover {			
+	transform: scale(1.03);		/* the button class in bookings, but the zooming scale is too big*/
+}								/* so overwrite here using an id*/
+
+/* for bookings page only*/
+
+#main-content #bookings-intro {
+	margin-top: -1em;
+	margin-bottom: 0em;
+}
+
+#main-content #bookings-intro-second {
+	margin-bottom: 0em;
+}
+
+#main-content #bookings-note {
+	margin-top: 2em;
+}
+
+#main-content #booking-form-title {
+	margin-bottom: 2em;
+}
+
+#main-content #booking-form-gap {
+	width:1.5em;
+}
+
+#booking-submit {
+	width: 100%;
+}
+
+#booking-submit:hover {			
+	transform: scale(1.03);
+}		
+
+select:focus {
+	transform: scale(1.02);
+	transition-duration: 0.2s;
+	box-shadow: none;
+}
+
+/* for privacy page only*/
+
+#privacy-content {
+	margin-top: -1.5em;
+}
+
+#main-content #privacy-bottom {
+	margin-bottom: 4em;
+}
+
+/* for desktop size*/
+
+@media only screen and (min-width: 990px) {
+
+	body {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	/* main menu */
+
+	#main-menu ul {
+		display: flex;
+		justify-content: right;
+		padding: 0;
+		text-align: left;
+	}
+
+	#main-menu li {
+		padding: 0.75em 0.5em;
+	}
+
+	#main-menu a {
+		font-size: 1em; /* smaller */
+	}
+
+	/* page header */
+
+	#page-header {
+		min-height: 70vh;	/* cover image*/
+	}
+
+	#page-header h1 {
+		font-size: 5.5em;
+	}
+
+	/* main content */
+
+	#main-content {
+		padding: 3em;
+	}
+
+	#main-content h2 {
+		font-size: 2em;		/* smaller font size*/
+	}
+
+	#main-content p {
+		padding-left: 20%;  /* samller so that the text is in the centre of the page*/
+		padding-right: 20%;	/* same above*/
+		margin-bottom: 2em; 
+		font-size: 1.25em;
+	}
+
+	/* page footer */
+
+	#page-footer {
+		padding: 1.5em 3em;
+	}
+
+	#secondary-menu ul {
+		display: flex;
+	}
+
+	#secondary-menu li {
+		padding: 0;
+		padding-right: 1.5em;
+	}
+
+	/* natumi logo */
+
+	#natumi-logo {
+		margin-top: 3%;
+		margin-bottom: 3%;
+		width: 10%;	/* smaller*/
+	}
+
+	/* for about page only - the images in 3 * 3 grind*/
+
+	#about-us-h2 {
+		margin-top: -1.6em;  /* put the smaller heading slightly closer to logo*/
+	}
+
+	.about-container {
+		padding-right: 20%;  /* wider so that the text is in the centre of the page*/
+		padding-left: 20%;   /* same above*/
+	}
+
+	.about-container-item:hover {
+		transform: scale(1.02); /* popup when mouse hover*/
+	}
+
+	/* for menu page only - the menu list*/
+
+	#menu-intro {
+		margin-top: -2.7em;
+	}
+
+	.menu-list {
+		padding-left: 30%;	/* wider so that the text is in the centre of the page*/
+		padding-right: 20%; /* same above*/
+	}
+
+	/* for gallery page only - the images in masonry - desktop view*/
+
+	#gallery-intro {
+		margin-top: -2.7em;	/* closer to the logo*/
+	}
+
+	.gallery-row {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	#menu-contact {
+		margin-top: -6em;
+		margin-bottom: 3em;
+	}
+
+	/* for contact page only - the contact form*/
+
+	#contact-intro {
+		margin-top: -2.7em;
+	}
+
+	.contact-list {
+		font-size: 1em;
+		width: 50%;
+	}
+
+	input[type=text], select {	/* the type-in textbox for name, email and phone number*/
+		box-shadow: 10px 10px rgba(168, 168, 168, 0.4);
+	}
+
+	#contact-button:hover {			
+		transform: scale(1.02);		/* smaller - the button class in bookings, but the zooming scale is too big*/
+	}								/* so overwrite here using an id*/
+
+	input[type=text]:focus {
+		transform: scale(1.02);     /* smaller than moble view*/
+	}
+
+	textarea {		/* the message textbox*/
+		box-shadow: 9px 9px rgba(168, 168, 168, 0.4);
+	}
+
+	textarea:focus {
+		transform: scale(1.01);
+		transition-duration: 0.4s;
+		box-shadow: none;
+	}
+
+	/* for bookings page only*/
+
+	#main-content #bookings-intro {
+		margin-top: -2.7em;
+		margin-bottom: 0em;
+	}
+
+	.booking-button {
+		font-size: 1em;
+		box-shadow: 9px 9px rgba(211, 100, 81, 0.4);
+	}
+	
+	/* for privacy page only*/
+
+	#privacy-content {
+		margin-top: -2.7em;
+	}
+}
